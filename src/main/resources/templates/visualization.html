@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Visualization for column: <span th:text="${column}"></span></h1>
+    <div id="visualization"></div>
+    <div th:utext="${visualizationScript}"></div>
+    <a href="/">Upload another file</a>
+</body>
+</html>

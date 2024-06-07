@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Data Summary</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Data Summary</h1>
+    <pre th:text="${summary}"></pre>
+    <p th:if="${error}" th:text="${error}" style="color: red;"></p>
+    <h2>Visualizations</h2>
+    <form method="get" action="/visualize">
+        <label for="column">Choose a column:</label>
+        <select name="column" id="column">
+            <option th:each="column : ${columns}" th:value="${column}" th:text="${column}"></option>
+        </select>
+        <button type="submit">Visualize</button>
+    </form>
+    <div id="visualization"></div>
+    <a href="/">Upload another file</a>
+</body>
+</html>
