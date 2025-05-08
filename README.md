@@ -15,6 +15,14 @@ Provides a quick, code‑free way to perform basic EDA on CSV files:
 
 ---
 
+## Example Visualization
+
+Below is a sample output demonstrating how the app visualizes a column’s distribution:
+
+![Example Visualization](Example_Image.png)
+
+---
+
 ## Features
 
 * **Upload CSV** (≤ 10 MB) through a web form
@@ -88,7 +96,7 @@ spring.servlet.multipart.max-request-size=10MB
 
 ```
 src/main/java/com/emmalewis/explore_data_app/
-├── ExploreDataAppApplication.java      # Spring Boot entry point
+├── ExploreDataAppApplication.java     # Spring Boot entry point
 ├── controller/
 │   └── DataController.java            # Handles upload & visualization endpoints
 ├── service/
