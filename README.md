@@ -111,9 +111,3 @@ src/main/java/com/emmalewis/explore_data_app/
 pom.xml                                # Maven build file
 mvnw, mvnw.cmd                         # Maven wrapper scripts
 ```
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
